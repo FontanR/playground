@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #000;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.dice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.point {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+[class^="dieface-"] {
+    background-color: azure;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+.dieface-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.dieface-2 {
+    justify-content: space-between;
+}
+
+.dieface-2 .point:nth-child(2) {
+    align-self: flex-end;
+}
+
+.dieface-3 {
+    justify-content: space-between;
+}
+
+.dieface-3 .point:nth-child(2) {
+    align-self: center;
+}
+
+.dieface-3 .point:nth-child(3) {
+    align-self: flex-end;
+}
+
+.dieface-4 {
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dieface-5 {
+    justify-content: space-between;
+}
+
+.dieface-5 .point {
+    align-self: center;
+}
+
+.dieface-6 {
+    justify-content: space-between;
+}
