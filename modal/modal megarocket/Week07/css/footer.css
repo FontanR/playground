@@ -1,0 +1,38 @@
+footer {
+    text-align: center;
+    background-color: #aace9b;
+    width: 100%;
+}
+
+.footer p {
+    color: #000;
+    padding: 10px 5px;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px 5px 5px;
+    margin: 0 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        text-align: initial;
+        overflow: hidden;
+    }
+
+    .footer p {
+        float: left;
+        margin: 20px 5px 20px 25px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer img {
+        float: right;
+        margin: 20px 10px;
+        width: 35px;
+        height: 35px;
+    }
+}

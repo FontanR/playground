@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #373867;
+}
+
+header img {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+}

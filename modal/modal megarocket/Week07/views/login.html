@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="icon" type="image/x-icon" href="../../Assets/images/favicon.ico">
+</head>
+
+<body>
+    <header id="header" class="header block-blue">
+        <img class="megalogo" src="../../Assets/images/megalogo.png" alt="megarocket logo">
+    </header>
+    <main>
+        <div id="simpleModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Message</h2>
+                    <span id="closeBtn" class="close-button">&times;</span>
+                </div>
+                <div id="modalBody" class="modal-body">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="./index.html"><img src="../../Assets/images/back-button.svg" class="back-button"
+                    alt="back button"></a>
+            <h1>Login</h1>
+            <div class="bottom-box">
+                <form id="form">
+                    <div class="mail-input">
+                        <label><img src="../../Assets/images/sign-in-mail.svg"></label>
+                        <input id="email" type="text" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="password-input">
+                        <label><img src="../../Assets/images/sign-in-pass.svg"></label>
+                        <input id="password" type="password" name="password" placeholder="Password">
+                    </div>
+                </form>
+                <p>
+                    <a href="#">Have you forgotten the password?</a>
+                </p>
+                <p>
+                    <input type="checkbox"> Remember me
+                </p>
+                <p>
+                    Don't have an account?
+                </p>
+                <p>
+                    <a href="./sign-up.html">Click here to become a member.</a>
+                </p>
+                <button id="button" type="submit">Login</button>
+            </div>
+        </div>
+        <footer id="footer" class=" footer block-green">
+            <p>Copyright © 2023 MegaRocket SA. All rights reserved.</p>
+            <a href="https://www.youtube.com/watch?v=DUIP-TOxbQs" target="_blank"><img
+                    src="../../Assets/images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.youtube.com/watch?v=DUIP-TOxbQs" target="_blank"><img
+                    src="../../Assets/images/instagram.png" alt="instagram logo"></a>
+            <a href="https://www.youtube.com/watch?v=DUIP-TOxbQs" target="_blank"><img
+                    src="../../Assets/images/linkedin.png" alt="linkedin logo"></a>
+        </footer>
+    </main>
+    <script src="../js/modal.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

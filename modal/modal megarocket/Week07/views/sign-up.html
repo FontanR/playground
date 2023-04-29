@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
+    <link rel="stylesheet" type="text/css" href="../css/sign-up.css">
+    <link rel="icon" type="image/x-icon" href="../../Assets/images/favicon.ico">
+</head>
+
+<body>
+    <header id="header" class="header block-blue">
+        <img class="megalogo" src="../../Assets/images/megalogo.png" alt="megarocket logo">
+    </header>
+    <main>
+        <div id="simpleModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Message</h2>
+                    <span id="closeBtn" class="close-button">&times;</span>
+                </div>
+                <div id="modalBody" class="modal-body">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="index.html"><img src="../../Assets/images/back-button.svg" class="back-button"
+                    alt="back button"></a>
+            <h1>Sign up</h1>
+            <form>
+                <div class="form-left">
+                    <div>
+                        <label class="name">Name</label>
+                        <input id="name" type="text" name="name">
+                    </div>
+                    <div>
+                        <label class="last-name">Last name</label>
+                        <input id="last-name" type="text" name="last-name">
+                    </div>
+                    <div>
+                        <label class="email">Email</label>
+                        <input id="email" type="text" name="email">
+                    </div>
+                    <div>
+                        <label class="birth">Date of birth</label>
+                        <input id="birth" type="date" name="birth">
+                    </div>
+                    <div>
+                        <label class="dni">DNI</label>
+                        <input id="dni" type="text" name="dni">
+                    </div>
+                    <div>
+                        <label class="phone">Telephone</label>
+                        <input id="phone" type="tel" name="phone">
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div>
+                        <label class="address">Adress</label>
+                        <input id="address" type="text" name="address">
+                    </div>
+                    <div>
+                        <label class="city">City</label>
+                        <input id="city" type="text" name="city">
+                    </div>
+                    <div>
+                        <label class="zip-code">Zip code</label>
+                        <input id="zip-code" type="text" name="zip-code">
+                    </div>
+                    <div>
+                        <label class="password">Password</label>
+                        <input id="password" type="password" name="password">
+                    </div>
+                    <div>
+                        <label class="repeat-password">Repeat Password</label>
+                        <input id="repeat-password" type="password" name="repeat-password">
+                    </div>
+                    <p><a href="./login.html">Already have an account?</a></p>
+                </div>
+            </form>
+        </div>
+        <button id="button" type="submit">Register</button>
+        <footer id="footer" class=" footer block-green">
+            <p>Copyright © 2023 MegaRocket SA. All rights reserved.</p>
+            <a href="https://www.youtube.com/watch?v=DUIP-TOxbQs" target="_blank"><img
+                    src="../../Assets/images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.youtube.com/watch?v=DUIP-TOxbQs" target="_blank"><img
+                    src="../../Assets/images/instagram.png" alt="instagram logo"></a>
+            <a href="https://www.youtube.com/watch?v=DUIP-TOxbQs" target="_blank"><img
+                    src="../../Assets/images/linkedin.png" alt="linkedin logo"></a>
+        </footer>
+    </main>
+    <script src="../js/modal.js"></script>
+    <script src="../js/sign-up.js"></script>
+</body>
+
+</html>

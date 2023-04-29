@@ -1,0 +1,92 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    width: 50%;
+    border-radius: 7px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1.5s;
+}
+
+.modal-header h2 {
+    margin: 0;
+    align-self: center;
+    font-size: 25px;
+    line-height: 2;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    background: #373867;
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-family: 'Roboto', Arial, serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.close-button {
+    color: #fff;
+    font-size: 30px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.class-3,
+.class-7 {
+    order: -3;
+}
+
+.class-4 {
+    order: -2;
+}
+
+.class-2,
+.class-10 {
+    order: -1;
+}
+
+.class-1 {
+    order: 1;
+}
+
+.class-8,
+.class-9 {
+    order: 2;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,395 @@
+body {
+    font-family: 'Roboto', Arial, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------- GLOBAL SECTION ----------*/
+.block-blue {
+    background-color: #373867;
+    color: white;
+}
+
+.block-grey {
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.block-green {
+    background-color: #aace9b;
+    color: white;
+}
+
+h1, .contact-heading, .aside a, .history h2 {
+    text-transform: uppercase;
+}
+
+.main h1, .main h2, .form h2, .history h2, .memberships h2 {
+    font-weight: bold;
+}
+
+/*--------- HEADER SECTION ----------*/
+.hamburguer {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.megalogo {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+}
+
+/*---------- MAIN SECTION ----------*/
+.main {
+    text-align: center;
+}
+
+.main p {
+    padding: 10px;
+    margin: 10px;
+}
+
+.main h2 {
+    font-size: 27px;
+}
+
+.main h1 {
+    font-size: 35px;
+    padding: 10px;
+    margin: 0;
+}
+
+.gymbro {
+    width: 150px;
+    height: 150px;
+}
+
+/*---------- SERVICES SECTION --------*/
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 670px;
+}
+
+.first, .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.services h2 {
+    text-align: center;
+    align-self: center;
+    border: 1px #000 solid;
+    padding: 8px 20px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #88a47c;
+    width: 180px;
+}
+
+.services p {
+    display: none;
+    padding: 5px 10px 5px 0px;
+    margin: 0 10px 10px 0;
+    margin-left: 30%;
+    width: 308px;
+    height: 140px;
+    line-height: 1.2em;
+    font-size: 1.1em;
+}
+
+/*---------- FORM SECTION ------------*/
+.form h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+
+.form-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-1 input, .form-1 select, .form-1 option {
+    padding: 5px;
+    margin: 10px;
+    height: 30px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.form-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-2 textarea {
+    padding: 5px;
+    margin: 10px;
+    height: 190px;
+    width: 70%;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.box-buttons {
+    display: flex;
+    align-self: auto;
+    justify-content: space-around;
+}
+
+.box-buttons button {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #49a37b;
+    border-radius: 12px;
+    border: #000 2px solid;
+}
+
+.form-2 button img {
+    width: 20px;
+    height: 20px;
+}
+
+.form ::placeholder, option, select {
+    color: #49a37b;
+}
+
+.form textarea::placeholder {
+    font-size: 17px;
+}
+
+/*---------- HISTORY SECTION --------*/
+.history {
+    text-align: center;
+}
+
+.history h2{
+    font-size: 2em;
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+
+.history p {
+    padding: 15px;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+/*-------- MEMBERSHIPS SECTION --------*/
+.memberships h2 {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 8px 5px 8px 5px;
+}
+
+.memberships ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memberships ol li {
+    list-style-type: decimal;
+    padding: 3px 0;
+    width: 100px;
+}
+
+.memberships ul {
+    margin: 0 15px;
+    padding: 4px 25px;
+}
+
+.activities-boxes ul li {
+    list-style-type: circle;
+    padding: 3px 0;
+}
+
+.box-1 h2 {
+    font-size: 1.8em;
+}
+
+.box-1 li {
+    font-size: 1.1em;
+}
+
+/*---------- MEDIA SECTION ---------*/
+@media screen and (min-width: 600px) {
+    .main {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .main h1 {
+        padding: 15px;
+    }
+
+    .main h2 {
+        padding: 10px 15px;
+    }
+
+    .main p {
+        padding: 10px;
+        margin: 3px 10px;
+    }
+
+    .gymbro {
+        float: right;
+        align-self: flex-end;
+    }
+
+    .services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: unset;
+    }
+
+    .first, .second {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: unset;
+        width: 50%;
+        height: 50%;
+    }
+
+    .services h2 {
+        height: 25px;
+        align-self: center;
+        padding: 8px 3px 5px 3px;
+        margin: 5px;
+    }
+
+    .services p {
+        display: block;
+    }
+
+    .services img {
+        padding: 5px;
+    }
+
+    .form-1 input, .form-1 select, .form-1 option, .form textarea {
+        max-width: 600px;
+    }
+
+    .history p {
+        padding: 15px 30px;
+    }
+
+    .memberships ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .memberships ul li {
+        padding: 3px 0;
+        width: 430px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin-left: 400px;
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    .megalogo {
+        width: 200px;
+        height: 40px;
+    }
+
+    .hamburguer {
+        width: 40px;
+        height: 40px;
+    }
+
+    .gymbro {
+        height: 180px;
+        width: 180px;
+    }
+
+    .form-1 {
+        width: 70%;
+        margin-bottom: 8px;
+    }
+
+    .form-2 {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .memberships {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .activities-boxes {
+        width: 25%;
+        padding: 0 8px;
+        margin: 0 2px;
+        box-sizing: border-box;
+    }
+
+    .memberships h2 {
+        text-align: left;
+        align-self: center;
+        font-size: 1.1em;
+        height: 30px;
+        padding: 5px 0;
+        margin: 5px 0;
+    }
+
+    .memberships ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .memberships ul li {
+        width: 100%;
+    }
+
+    .memberships ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0 15px;
+    }
+
+    .memberships ol li {
+        width: 100%;
+    }
+}
