@@ -1,8 +1,8 @@
 var modal = document.getElementById('simpleModal');
-var loginBtn = document.getElementById('button');
+var button = document.getElementById('button');
 var closeBtn = document.getElementById('closeBtn');
 
-loginBtn.addEventListener('click', openModal);
+button.addEventListener('click', openModal);
 function openModal() {
     modal.style.display = 'block';
 }
