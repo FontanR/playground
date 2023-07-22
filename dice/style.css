@@ -21,7 +21,7 @@ h1 {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: grey;
 }
 
 [class^="dieface-"] {
